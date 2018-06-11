@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## Name of the branch you're currently on
+## Example usage:
+##
+##     $ git push origin `git this-branch`
+
+ans=`git rev-parse --abbrev-ref HEAD`
+
+if [ $ans = "HEAD" ]; then
+    ans=`git branch | awk '/HEAD detached at/ { sub(/\)/, "", $NF); print $NF }'`
+fi
+
+echo $ans
+
+## git-this-branch ends here

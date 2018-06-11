@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## History is bunk so details of how this script came to be are
+## omitted.
+##
+## Example usage:
+##
+##     $ git git status
+##     $ git git git git git log
+
+git $@
+
+## git-git ends here

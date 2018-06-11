@@ -1,0 +1,7 @@
+#!/bin/bash
+
+## Because I can never remember if it's git name-ref or git name-rev.
+
+git name-rev $@
+
+## git-name-ref ends here

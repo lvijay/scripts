@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+## Example usage:
+##
+##     $ cd `git home`
+
+git rev-parse --show-toplevel
+
+## git-home ends here
